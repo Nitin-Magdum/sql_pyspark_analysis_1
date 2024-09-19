@@ -7,5 +7,6 @@ SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
 select * from public.work where museum_id is NULL
 
 /*markdown
-
+### 2.  Are there museums without any paintings?
 */
+
