@@ -1,0 +1,14 @@
+{
+ "cells": [
+  {
+   "kind": 2,
+   "language": "sql",
+   "value": "select count(*) from public.artist ",
+   "metadata": {
+    "connectionName": "Postgres",
+    "markAsSkip": false
+   }
+  }
+ ],
+ "metadata": {}
+}
