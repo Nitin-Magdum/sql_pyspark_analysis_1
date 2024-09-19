@@ -1,1 +1,3 @@
-select count(*) from public.artist 
+select * from public.artist 
+
+se
