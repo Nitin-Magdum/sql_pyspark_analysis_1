@@ -1,3 +1,5 @@
-select * from public.artist LIMIT 10
+/*markdown
+1.  Fetch all the paintings which are not displayed on any museums?
+*/
 
-se
+select count(*) from public.artist 
