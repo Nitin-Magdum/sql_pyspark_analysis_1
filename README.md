@@ -27,4 +27,5 @@ The project also requires the PostgreSQL JDBC Driver to connect to a PostgreSQL 
 Alternatively, you can set the path to the `.jar` file as a global variable if you prefer.
 
 5. **Questions and Table Structure**
-   Questions are in [Questions](Questions.md)
+   The questions related to the dataset can be found in the file named [Questions](Questions.md). Additionally, the structure and names of the relevant 
+    tables are defined in the file [Table](Table_Structure.md).
