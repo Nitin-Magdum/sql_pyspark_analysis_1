@@ -1,5 +1,3 @@
-SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
-
 /*markdown
 ### 1.  Fetch all the paintings which are not displayed on any museums?
 */
