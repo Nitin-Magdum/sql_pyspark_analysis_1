@@ -25,3 +25,6 @@ The project also requires the PostgreSQL JDBC Driver to connect to a PostgreSQL 
 -   Place the downloaded `.jar` file into your project's working folder. This allows PySpark to access the driver.
 
 Alternatively, you can set the path to the `.jar` file as a global variable if you prefer.
+
+5. **Questions and Table Structure**
+   Questions are in [Questions](Questions.md)
