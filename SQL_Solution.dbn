@@ -1,0 +1,61 @@
+{
+ "cells": [
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "### 1.  Fetch all the paintings which are not displayed on any museums?",
+   "metadata": {}
+  },
+  {
+   "kind": 2,
+   "language": "sql",
+   "value": "select * from work where museum_id is NULL",
+   "metadata": {
+    "connectionName": "Postgres"
+   }
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "### 2.  Are there museums without any paintings?",
+   "metadata": {}
+  },
+  {
+   "kind": 2,
+   "language": "sql",
+   "value": "select * from museum m\r\n\twhere not exists (select 1 from work w\r\n\t\t\t\t\t where w.museum_id=m.museum_id)",
+   "metadata": {
+    "connectionName": "Postgres"
+   }
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 3. How many paintings have an asking price of more than their regular price?",
+   "metadata": {}
+  },
+  {
+   "kind": 2,
+   "language": "sql",
+   "value": "select * from product_size\r\nwhere sale_price > regular_price\r\n",
+   "metadata": {
+    "connectionName": "Postgres"
+   }
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 4. Identify the paintings whose asking price is less than 50% of its regular price.",
+   "metadata": {}
+  },
+  {
+   "kind": 2,
+   "language": "sql",
+   "value": "select * from product_size\r\nwhere sale_price < (regular_price * 0.5)",
+   "metadata": {
+    "connectionName": "Postgres"
+   }
+  }
+ ],
+ "metadata": {}
+}
