@@ -13,12 +13,6 @@
 | `name`          | `text`             |
 | `style`         | `text`             |
 
-### 3. **Subject**  
-| **Column Name** | **Data Type** |
-|-----------------|---------------|
-| `work_id`       | `bigint`      |
-| `subject`       | `text`        |
-
 </div>
 
 <div style="width: 48%;">
@@ -30,6 +24,24 @@
 | `sale_price`      | `bigint`           |
 | `regular_price`   | `bigint`           |
 | `size_id`         | `text`             |
+
+</div>
+
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+
+<div style="width: 48%;">
+
+### 3. **Subject**  
+| **Column Name** | **Data Type** |
+|-----------------|---------------|
+| `work_id`       | `bigint`      |
+| `subject`       | `text`        |
+
+</div>
+
+<div style="width: 48%;">
 
 ### 4. **Artist**  
 | **Column Name**  | **Data Type** |
@@ -60,14 +72,6 @@
 | `height`        | `double precision` |
 | `label`         | `text`             |
 
-### 7. **Museum Hours**  
-| **Column Name** | **Data Type** |
-|-----------------|---------------|
-| `museum_id`     | `bigint`      |
-| `day`           | `text`        |
-| `open`          | `text`        |
-| `close`         | `text`        |
-
 </div>
 
 <div style="width: 48%;">
@@ -79,6 +83,26 @@
 | `url`                   | `text`        |
 | `thumbnail_small_url`    | `text`        |
 | `thumbnail_large_url`    | `text`        |
+
+</div>
+
+</div>
+
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+
+<div style="width: 48%;">
+
+### 7. **Museum Hours**  
+| **Column Name** | **Data Type** |
+|-----------------|---------------|
+| `museum_id`     | `bigint`      |
+| `day`           | `text`        |
+| `open`          | `text`        |
+| `close`         | `text`        |
+
+</div>
+
+<div style="width: 48%;">
 
 ### 8. **Museum**  
 | **Column Name** | **Data Type** |
