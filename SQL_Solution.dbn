@@ -55,6 +55,122 @@
    "metadata": {
     "connectionName": "Postgres"
    }
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 5. Which canvas size costs the most?",
+   "metadata": {}
+  },
+  {
+   "kind": 2,
+   "language": "sql",
+   "value": "select cs.label as canva, ps.sale_price\r\n\tfrom (select *\r\n\t\t  , rank() over(order by sale_price desc) as rnk \r\n\t\t  from product_size) ps\r\n\tjoin canvas_size cs on cs.size_id::text=ps.size_id\r\n\twhere ps.rnk=1;\t",
+   "metadata": {
+    "connectionName": "Postgres"
+   }
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 6. Delete duplicate records from the work, product_size, subject, and image_link tables.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 7. Identify the museums with invalid city information in the given dataset.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 8. Museum_Hours table has 1 invalid entry. Identify it and remove it.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 9. Fetch the top 10 most famous painting subjects.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 10. Identify the museums which are open on both Sunday and Monday. Display museum name and city.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 11. How many museums are open every single day?",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 12. Which are the top 5 most popular museums? (Popularity is defined based on the most number of paintings in a museum.)",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 13. Who are the top 5 most popular artists? (Popularity is defined based on the most number of paintings done by an artist.)",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 14. Display the 3 least popular canvas sizes.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 15. Which museum is open for the longest during a day? Display museum name, state, hours open, and which day.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 16. Which museum has the most number of paintings in the most popular painting style?",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 17. Identify the artists whose paintings are displayed in multiple countries.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 18. Display the country and the city with the most number of museums. Output two separate columns to mention the city and country. If there are multiple values, separate them with commas.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 19. Identify the artist and the museum where the most expensive and least expensive painting is placed. Display the artist's name, sale price, painting name, museum name, museum city, and canvas label.",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 20. Which country has the 5th highest number of paintings?",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "\r\n#### 21. Which are the 3 most popular and 3 least popular painting styles?",
+   "metadata": {}
+  },
+  {
+   "kind": 1,
+   "language": "markdown",
+   "value": "#### 22. Which artist has the most number of portrait paintings outside the USA? Display the artist name, number of paintings, and the artist's nationality.\r\n",
+   "metadata": {}
   }
  ],
  "metadata": {}

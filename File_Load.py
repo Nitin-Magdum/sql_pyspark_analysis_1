@@ -20,3 +20,5 @@ files = ['artist', 'canvas_size', 'image_link', 'museum_hours', 'museum', 'produ
 for file in tqdm(files, desc=f"{Fore.RED}Processing files...{Style.RESET_ALL}"):
     df = pd.read_csv(f'Data/{file}.csv')
     df.to_sql(file, con=conn, if_exists='replace', index=False)
+
+
